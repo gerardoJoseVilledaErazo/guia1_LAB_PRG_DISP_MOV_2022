@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Guia 01</string>
+    <!--    Botones     -->
+    <string name="btnProcesar">Procesar</string>
+    <string name="btnMultiplicacionRusa">Multiplicación Rusa</string>
+    <string name="btnPalindromo">Palíndromo</string>
+    <string name="btnAnioBisiesto">Bisiesto</string>
+    <!--    Text Views     -->
+    <string name="tvBienvenido">Bienvenido/a</string>
+    <string name="tvMultiplicador">Multiplicador:</string>
+    <string name="tvMultiplicando">Multiplicando:</string>
+    <string name="tvPalabra">Palabra:</string>
+    <string name="tvAnio">Año:</string>
+    <!--    Edit Texts     -->
+    <string name="edtPalindromo">Ingrese una palabra</string>
+    <string name="edtAnioBisiesto">Ingrese un año</string>
+</resources>

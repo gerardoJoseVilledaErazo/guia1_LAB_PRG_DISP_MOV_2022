@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MultiplicacionRusaActivity">
+
+    <Button
+        android:id="@+id/btnProcesar"
+        style="@style/Widget.GVILLEDA.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="130dp"
+        android:text="@string/btnProcesar"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMultiplicador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="@string/tvMultiplicador"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnProcesar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.050"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtMultiplicador"
+        style="@style/Widget.GVILLEDA.TextInputLayout"
+        app:endIconMode="clear_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        app:layout_constraintBottom_toTopOf="@+id/btnProcesar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewMultiplicador"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.30"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtMultiplicador"
+            android:layout_width="180dp"
+            android:layout_height="54dp"
+            android:inputType="numberDecimal"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textViewMultiplicando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="245dp"
+        android:text="@string/tvMultiplicando"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnProcesar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.050"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtMultiplicando"
+        style="@style/Widget.GVILLEDA.TextInputLayout"
+        app:endIconMode="clear_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        app:layout_constraintBottom_toTopOf="@+id/btnProcesar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewMultiplicando"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.50"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtMultiplicando"
+            android:layout_width="180dp"
+            android:layout_height="54dp"
+            android:inputType="numberDecimal"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
